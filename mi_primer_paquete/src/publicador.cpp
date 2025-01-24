@@ -24,7 +24,7 @@ int main(int argc, char **argv){
     std::cout<< "Publicando velocidad en tortuga" <<  std::endl;
     //cmd_vel_pub.publish(cmd_vel_pub);
     cmd_vel_pub.publish(cmd_vel_msg);
-    loop_rate.sleep();
+    loop_rate.sleep();//duerme el hilo las dos lineas de arriba
     
   }
   return 0;
